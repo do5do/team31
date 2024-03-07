@@ -46,6 +46,7 @@ public class Olympic {
 
             if (nations.get(i).number == k) {
                 target = i;
+                break; // 이게 문제가 아니라 등수를 잘못구해서 틀렸던거 였음
             }
         }
 

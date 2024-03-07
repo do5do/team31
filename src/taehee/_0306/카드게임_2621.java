@@ -1,4 +1,4 @@
-package taehee.problem._2621;
+package taehee._0306;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 
-public class Main {
+public class 카드게임_2621 {
 
   public static void main(String[] args) throws IOException {
     List<Card> cardList = new ArrayList<>(5);

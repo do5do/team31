@@ -1,4 +1,4 @@
-package taehee.problem._2816;
+package taehee._0307;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class 디지털티비_2816 {
 
   final static String KBS1 = "KBS1";
   final static String KBS2 = "KBS2";

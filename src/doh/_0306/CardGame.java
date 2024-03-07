@@ -1,4 +1,4 @@
-package doh;
+package doh._0306;
 
 import java.io.BufferedReader;
 import java.io.IOException;

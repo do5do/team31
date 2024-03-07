@@ -4,4 +4,6 @@
      - [삼성 기출 문제집](https://www.acmicpc.net/workbook/view/1152)
      - [대학생 기본반 문제집](https://www.acmicpc.net/workbook/view/2047)
      - [게더타운](https://app.gather.town/app/UPYJR8odMXsd3ei2/Jackpot)
-   - team31 repository에 풀이 공유
+   - team31 repository에 풀이 공유 + 리뷰
+     - 본인 directory > 날짜 별로 구분
+     - ex) doh/_0306

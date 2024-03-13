@@ -21,7 +21,6 @@ public class 나이트의이동_7562 {
 
         for (int i = 0; i < t; i++) {
             n = Integer.parseInt(br.readLine());
-//            int[][] matrix = new int[n][n];
             start = new int[2];
             end = new int[2];
 

@@ -1,6 +1,5 @@
 package doh._0327;
 
-import java.awt.font.TextMeasurer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

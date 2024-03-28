@@ -10,7 +10,7 @@ public class 어두운굴다리_17266 {
   static int[] location;
   static int N, M;
 
-  public static void main(String[] args) throws NumberFormatException, IOException {
+  public static void main(String[] args) throws IOException {
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     N = Integer.parseInt(br.readLine());

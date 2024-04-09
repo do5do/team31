@@ -1,46 +1,37 @@
-package tjoon._0308;
+package tjoon._202403._0308;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class 연결요소의개수_11724 {
+public class 바이러스_2606 {
 
   static int[][] graph;
   static boolean[] visited;
+  static int count = 0;
 
   public static void main(String[] args) throws IOException {
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    StringTokenizer st = new StringTokenizer(br.readLine());
-
-    int n = Integer.parseInt(st.nextToken());
-    int m = Integer.parseInt(st.nextToken());
+    int n = Integer.parseInt(br.readLine());
+    int k = Integer.parseInt(br.readLine());
 
     graph = new int[n + 1][n + 1];
     visited = new boolean[n + 1];
 
-    for (int i = 0; i < m; i++) {
-      st = new StringTokenizer(br.readLine());
+    for (int i = 0; i < k; i++) {
+      StringTokenizer st = new StringTokenizer(br.readLine());
 
-      int num1 = Integer.parseInt(st.nextToken());
-      int num2 = Integer.parseInt(st.nextToken());
+      int a = Integer.parseInt(st.nextToken());
+      int b = Integer.parseInt(st.nextToken());
 
-      graph[num1][num2] = 1;
-      graph[num2][num1] = 1;
+      graph[a][b] = 1;
+      graph[b][a] = 1;
     }
 
-    int count = 0;
-    for (int i = 1; i < n + 1; i++) {
-      if (!visited[i]) {
-        dfs(i);
-        count++;
-      }
-    }
-
-    System.out.println(count);
-
+    dfs(1);
+    System.out.println(count - 1); // 1일때도 세어줌
   }
 
   private static void dfs(int num) {
@@ -49,6 +40,7 @@ public class 연결요소의개수_11724 {
     }
 
     visited[num] = true;
+    count++;
 
     for (int i = 0; i < graph.length; i++) {
       if (graph[num][i] == 1) {
@@ -58,6 +50,5 @@ public class 연결요소의개수_11724 {
     }
 
   }
-
 
 }

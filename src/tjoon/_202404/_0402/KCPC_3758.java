@@ -1,4 +1,4 @@
-package tjoon._0402;
+package tjoon._202404._0402;
 
 import java.io.BufferedReader;
 import java.io.IOException;

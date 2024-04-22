@@ -1,12 +1,8 @@
 package doh._04._0422;
 
-import org.w3c.dom.Node;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
@@ -29,16 +25,23 @@ public class 스카이라인쉬운거_1863 {
         for (int i = 0; i < n; i++) {
             int height = nodes[i].y;
 
-            while (!stack.isEmpty()) {
-                Integer top = stack.peek();
+            while (!stack.isEmpty() && stack.peek() > height) {
+                cnt++;
+                stack.pop();
+            }
 
-                if (height < top) {
-                    cnt++;
-                    stack.pop();
-                }
+            if (!stack.isEmpty() && stack.peek() == height) {
+                continue;
             }
 
             stack.push(height);
+        }
+
+        while (!stack.isEmpty()) {
+            if (stack.peek() != 0) {
+                cnt++;
+            }
+            stack.pop();
         }
 
         System.out.println(cnt);
